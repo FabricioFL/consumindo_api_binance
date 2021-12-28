@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css') }}">
+    <script src="{{url_for('static', filename = 'js/requests.js')}}" defer></script>
+    <title>CriptoCot</title>
+</head>
+<body>
+<a href="/" class="btn_voltar_inicio"><</a>
+<header>
+    <a>CriptoCot</a>
+</header>
+<section class="coin_panel">
+    <div class="bitcoin">
+        <a>Nome: <a id='nome_bitcoin'></a></a><br>
+        <a>Preço: <a id='preco_bitcoin'></a></a>
+    </div>
+    <div class="ethereum">
+        <a>Nome: <a id='nome_ethereum'></a></a><br>
+        <a>Preço: <a id='preco_ethereum'></a></a>
+    </div>
+    <div class="binance_coin">
+        <a>Nome: <a id='nome_binance_coin'></a></a><br>
+        <a>Preço: <a id='preco_binance_coin'></a></a>
+    </div>
+    <div class="tether">
+        <a>Nome: <a id='nome_tether'></a></a><br>
+        <a>Preço: <a id='preco_tether'></a></a>
+    </div>
+    <div class="solana">
+        <a>Nome: <a id='nome_solana'></a></a><br>
+        <a>Preço: <a id='preco_solana'></a></a>
+    </div>
+    <div class="cardano">
+        <a>Nome: <a id='nome_cardano'></a></a><br>
+        <a>Preço: <a id='preco_cardano'></a></a>
+    </div>
+    <div class="usd_coin">
+        <a>Nome: <a id='nome_usd_coin'></a></a><br>
+        <a>Preço: <a id='preco_usd_coin'></a></a>
+    </div>
+    <div class="xrp">
+        <a>Nome: <a id='nome_xrp'></a></a><br>
+        <a>Preço: <a id='preco_xrp'></a></a>
+    </div>
+    <div class="terra">
+        <a>Nome: <a id='nome_terra'></a></a><br>
+        <a>Preço: <a id='preco_terra'></a></a>
+    </div>
+    <div class="polkadot">
+        <a>Nome: <a id='nome_polkadot'></a></a><br>
+        <a>Preço: <a id='preco_polkadot'></a></a>
+    </div>
+    <div class="dogecoin">
+        <a>Nome: <a id='nome_dogecoin'></a></a><br>
+        <a>Preço: <a id='preco_dogecoin'></a></a>
+    </div>
+    <div class="avalanche">
+        <a>Nome: <a id='nome_avalanche'></a></a><br>
+        <a>Preço: <a id='preco_avalanche'></a></a>
+    </div>
+    <div class="shiba_inu">
+        <a>Nome: <a id='nome_shiba_inu'></a></a><br>
+        <a>Preço: <a id='preco_shiba_inu'></a></a>
+    </div>
+    <div class="polygon">
+        <a>Nome: <a id='nome_polygon'></a></a><br>
+        <a>Preço: <a id='preco_polygon'></a></a>
+    </div>
+    <div class="binance_usd">
+        <a>Nome: <a id='nome_binance_usd'></a></a><br>
+        <a>Preço: <a id='preco_binance_usd'></a></a>
+    </div>
+    <div class="litecoin">
+        <a>Nome: <a id='nome_litecoin'></a></a><br>
+        <a>Preço: <a id='preco_litecoin'></a></a>
+    </div>
+    <div class="algorand">
+        <a>Nome: <a id='nome_algorand'></a></a><br>
+        <a>Preço: <a id='preco_algorand'></a></a>
+    </div>
+    <div class="uniswasp">
+        <a>Nome: <a id='nome_uniswasp'></a></a><br>
+        <a>Preço: <a id='preco_uniswasp'></a></a>
+    </div>
+    <div class="chainlink">
+        <a>Nome: <a id='nome_chainlink'></a></a><br>
+        <a>Preço: <a id='preco_chainlink'></a></a>
+    </div>
+    <div class="tron">
+        <a>Nome: <a id='nome_tron'></a></a><br>
+        <a>Preço: <a id='preco_tron'></a></a>
+    </div>
+    <div class="bitcoin_cash">
+        <a>Nome: <a id='nome_bitcoin_cash'></a></a><br>
+        <a>Preço: <a id='preco_bitcoin_cash'></a></a>
+    </div>
+    <div class="axie_infinity">
+        <a>Nome: <a id='nome_axie_infinity'></a></a><br>
+        <a>Preço: <a id='preco_axie_infinity'></a></a>
+    </div>
+    <div class="decentraland">
+        <a>Nome: <a id='nome_decentraland'></a></a><br>
+        <a>Preço: <a id='preco_decentraland'></a></a>
+    </div>
+    <div class="stellar">
+        <a>Nome: <a id='nome_stellar'></a></a><br>
+        <a>Preço: <a id='preco_stellar'></a></a>
+    </div>
+    <div class="dai">
+        <a>Nome: <a id='nome_dai'></a></a><br>
+        <a>Preço: <a id='preco_dai'></a></a>
+    </div>
+    <div class="elrond">
+        <a>Nome: <a id='nome_elrond'></a></a><br>
+        <a>Preço: <a id='preco_elrond'></a></a>
+    </div>
+    <div class="ftx_tolken">
+        <a>Nome: <a id='nome_ftx_tolken'></a></a><br>
+        <a>Preço: <a id='preco_ftx_tolken'></a></a>
+    </div>
+    <div class="cosmos">
+        <a>Nome: <a id='nome_cosmos'></a></a><br>
+        <a>Preço: <a id='preco_cosmos'></a></a>
+    </div>
+    <div class="vechain">
+        <a>Nome: <a id='nome_vechain'></a></a><br>
+        <a>Preço: <a id='preco_vechain'></a></a>
+    </div>
+    <div class="internet_computer">
+        <a>Nome: <a id='nome_internet_computer'></a></a><br>
+        <a>Preço: <a id='preco_internet_computer'></a></a>
+    </div>
+    <div class="filecoin">
+        <a>Nome: <a id='nome_filecoin'></a></a><br>
+        <a>Preço: <a id='preco_filecoin'></a></a>
+    </div>
+    <div class="ethereum_classic">
+        <a>Nome: <a id='nome_ethereum_classic'></a></a><br>
+        <a>Preço: <a id='preco_ethereum_classic'></a></a>
+    </div>
+    <div class="the_sandbox">
+        <a>Nome: <a id='nome_the_sandbox'></a></a><br>
+        <a>Preço: <a id='preco_the_sandbox'></a></a>
+    </div>
+    <div class="hedera">
+        <a>Nome: <a id='nome_hedera'></a></a><br>
+        <a>Preço: <a id='preco_hedera'></a></a>
+    </div>
+    <div class="theta">
+        <a>Nome: <a id='nome_theta'></a></a><br>
+        <a>Preço: <a id='preco_theta'></a></a>
+    </div>
+    <div class="near_protocol">
+        <a>Nome: <a id='nome_near_protocol'></a></a><br>
+        <a>Preço: <a id='preco_near_protocol'></a></a>
+    </div>
+    <div class="fantom">
+        <a>Nome: <a id='nome_fantom'></a></a><br>
+        <a>Preço: <a id='preco_fantom'></a></a>
+    </div>
+    <div class="gala">
+        <a>Nome: <a id='nome_gala'></a></a><br>
+        <a>Preço: <a id='preco_gala'></a></a>
+    </div>
+    <div class="monero">
+        <a>Nome: <a id='nome_monero'></a></a><br>
+        <a>Preço: <a id='preco_monero'></a></a>
+    </div>
+    <div class="tezos">
+        <a>Nome: <a id='nome_tezos'></a></a><br>
+        <a>Preço: <a id='preco_tezos'></a></a>
+    </div>
+    <div class="helim">
+        <a>Nome: <a id='nome_helim'></a></a><br>
+        <a>Preço: <a id='preco_helim'></a></a>
+    </div>
+    <div class="klatyn">
+        <a>Nome: <a id='nome_klatyn'></a></a><br>
+        <a>Preço: <a id='preco_klatyn'></a></a>
+    </div>
+    <div class="the_graph">
+        <a>Nome: <a id='nome_the_graph'></a></a><br>
+        <a>Preço: <a id='preco_the_graph'></a></a>
+    </div>
+    <div class="flow">
+        <a>Nome: <a id='nome_flow'></a></a><br>
+        <a>Preço: <a id='preco_flow'></a></a>
+    </div>
+    <div class="eos">
+        <a>Nome: <a id='nome_eos'></a></a><br>
+        <a>Preço: <a id='preco_eos'></a></a>
+    </div>
+    <div class="loopring">
+        <a>Nome: <a id='nome_loopring'></a></a><br>
+        <a>Preço: <a id='preco_loopring'></a></a>
+    </div>
+    <div class="pancake_swap">
+        <a>Nome: <a id='nome_pancake_swap'></a></a><br>
+        <a>Preço: <a id='preco_pancake_swap'></a></a>
+    </div>
+    <div class="stacks">
+        <a>Nome: <a id='nome_stacks'></a></a><br>
+        <a>Preço: <a id='preco_stacks'></a></a>
+    </div>
+    <div class="aave">
+        <a>Nome: <a id='nome_aave'></a></a><br>
+        <a>Preço: <a id='preco_aave'></a></a>
+    </div>
+    <div class="marker">
+        <a>Nome: <a id='nome_marker'></a></a><br>
+        <a>Preço: <a id='preco_marker'></a></a>
+    </div>
+    <div class="bittorrent">
+        <a>Nome: <a id='nome_bittorrent'></a></a><br>
+        <a>Preço: <a id='preco_bittorrent'></a></a>
+    </div>
+    <div class="kusama">
+        <a>Nome: <a id='nome_kusama'></a></a><br>
+        <a>Preço: <a id='preco_kusama'></a></a>
+    </div>
+    <div class="enjin_coin">
+        <a>Nome: <a id='nome_enjin_coin'></a></a><br>
+        <a>Preço: <a id='preco_enjin_coin'></a></a>
+    </div>
+    <div class="zcash">
+        <a>Nome: <a id='nome_zcash'></a></a><br>
+        <a>Preço: <a id='preco_zcash'></a></a>
+    </div>
+    <div class="ecash">
+        <a>Nome: <a id='nome_ecash'></a></a><br>
+        <a>Preço: <a id='preco_ecash'></a></a>
+    </div>
+    <div class="quant">
+        <a>Nome: <a id='nome_quant'></a></a><br>
+        <a>Preço: <a id='preco_quant'></a></a>
+    </div>
+    <div class="amp">
+        <a>Nome: <a id='nome_amp'></a></a><br>
+        <a>Preço: <a id='preco_amp'></a></a>
+    </div>
+    <div class="harmony">
+        <a>Nome: <a id='nome_harmony'></a></a><br>
+        <a>Preço: <a id='preco_harmony'></a></a>
+    </div>
+    <div class="thorchain">
+        <a>Nome: <a id='nome_thorchain'></a></a><br>
+        <a>Preço: <a id='preco_thorchain'></a></a>
+    </div>
+    <div class="waves">
+        <a>Nome: <a id='nome_waves'></a></a><br>
+        <a>Preço: <a id='preco_waves'></a></a>
+    </div>
+    <div class="neo">
+        <a>Nome: <a id='nome_neo'></a></a><br>
+        <a>Preço: <a id='preco_neo'></a></a>
+    </div>
+</section>
+</body>
+</html>
